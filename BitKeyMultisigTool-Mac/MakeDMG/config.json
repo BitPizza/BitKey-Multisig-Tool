@@ -1,0 +1,11 @@
+{
+  "title": "BitKey-Multisig-Tool",
+  "background": "background.png",
+  "contents": [
+    { "x": 348, "y": 18, "type": "link", "path": "/Applications" },
+    { "x": 92, "y": 22, "type": "file", "path": "BitKeyMultisigTool.app" }
+  ]
+}
+
+
+

@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E125996D215E30BB009A443B /* ShowQRcodeBigVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E125996A215E30BB009A443B /* ShowQRcodeBigVC.m */; };
+		E125996E215E30BB009A443B /* ShowQRcodeBigVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E125996C215E30BB009A443B /* ShowQRcodeBigVC.xib */; };
+		E16251A3215B3D66008C4ABC /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E16251A2215B3D66008C4ABC /* logo.png */; };
+		E16251B3215CB8AB008C4ABC /* CryptoJsWrap.m in Sources */ = {isa = PBXBuildFile; fileRef = E16251B2215CB8AB008C4ABC /* CryptoJsWrap.m */; };
+		E16251B5215CBDB6008C4ABC /* crypto-js.txt in Resources */ = {isa = PBXBuildFile; fileRef = E16251B4215CBDB6008C4ABC /* crypto-js.txt */; };
+		E16251B9215CD1C7008C4ABC /* BKMsGenerateSeedsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16251B6215CD1C6008C4ABC /* BKMsGenerateSeedsVC.xib */; };
+		E16251BA215CD1C7008C4ABC /* BKMsGenerateSeedsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E16251B7215CD1C6008C4ABC /* BKMsGenerateSeedsVC.m */; };
+		E16251BF215DE965008C4ABC /* qrcode.png in Resources */ = {isa = PBXBuildFile; fileRef = E16251BE215DE965008C4ABC /* qrcode.png */; };
+		E16251C1215E05C9008C4ABC /* arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = E16251C0215E05C9008C4ABC /* arrow_down.png */; };
+		E16251C5215E2348008C4ABC /* ShowQRcodeSmallVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E16251C3215E2348008C4ABC /* ShowQRcodeSmallVC.m */; };
+		E16251C6215E2348008C4ABC /* ShowQRcodeSmallVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E16251C4215E2348008C4ABC /* ShowQRcodeSmallVC.xib */; };
+		E16251C9215E28F3008C4ABC /* QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E16251C7215E28F3008C4ABC /* QRCode.m */; };
+		E177A2E221BB6F3B00EC52E8 /* app-v2-multisig.html in Resources */ = {isa = PBXBuildFile; fileRef = E177A2D521BB6F3B00EC52E8 /* app-v2-multisig.html */; };
+		E177A2E321BB6F3B00EC52E8 /* bip39-en.txt in Resources */ = {isa = PBXBuildFile; fileRef = E177A2D621BB6F3B00EC52E8 /* bip39-en.txt */; };
+		E177A2E421BB6F3B00EC52E8 /* app4.0.2.b2.js in Resources */ = {isa = PBXBuildFile; fileRef = E177A2D721BB6F3B00EC52E8 /* app4.0.2.b2.js */; };
+		E177A2E521BB6F3B00EC52E8 /* JsJson.js in Resources */ = {isa = PBXBuildFile; fileRef = E177A2D821BB6F3B00EC52E8 /* JsJson.js */; };
+		E177A2E621BB6F3B00EC52E8 /* bitkey-multisig-v2.js in Resources */ = {isa = PBXBuildFile; fileRef = E177A2D921BB6F3B00EC52E8 /* bitkey-multisig-v2.js */; };
+		E177A2E721BB6F3B00EC52E8 /* BKMsCoinMachine_Mac.m in Sources */ = {isa = PBXBuildFile; fileRef = E177A2DC21BB6F3B00EC52E8 /* BKMsCoinMachine_Mac.m */; };
+		E177A2E921BB6F3B00EC52E8 /* CoinMachineResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E177A2DF21BB6F3B00EC52E8 /* CoinMachineResult.m */; };
+		E1AF16C821AE826600AA5585 /* BKHttpProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AF16C421AE826500AA5585 /* BKHttpProxy.m */; };
+		E1AF16C921AE826600AA5585 /* NetworkLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = E1AF16C721AE826500AA5585 /* NetworkLogger.m */; };
+		E1EC6077215499BB00139F1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EC6076215499BB00139F1C /* AppDelegate.m */; };
+		E1EC6079215499BF00139F1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1EC6078215499BF00139F1C /* Assets.xcassets */; };
+		E1EC607C215499BF00139F1C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1EC607A215499BF00139F1C /* MainMenu.xib */; };
+		E1EC607F215499BF00139F1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EC607E215499BF00139F1C /* main.m */; };
+		E1EC608921549B0700139F1C /* MainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EC608721549B0700139F1C /* MainVC.m */; };
+		E1EC608A21549B0700139F1C /* MainVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1EC608821549B0700139F1C /* MainVC.xib */; };
+		E1EC60962154DC5700139F1C /* BKMsImportSeedsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E1EC60942154DC5700139F1C /* BKMsImportSeedsVC.m */; };
+		E1EC60972154DC5700139F1C /* BKMsImportSeedsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1EC60952154DC5700139F1C /* BKMsImportSeedsVC.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E125996A215E30BB009A443B /* ShowQRcodeBigVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowQRcodeBigVC.m; sourceTree = "<group>"; };
+		E125996B215E30BB009A443B /* ShowQRcodeBigVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowQRcodeBigVC.h; sourceTree = "<group>"; };
+		E125996C215E30BB009A443B /* ShowQRcodeBigVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowQRcodeBigVC.xib; sourceTree = "<group>"; };
+		E16251A2215B3D66008C4ABC /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		E16251B0215B62B2008C4ABC /* bitkey.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bitkey.pch; sourceTree = "<group>"; };
+		E16251B1215CB8AA008C4ABC /* CryptoJsWrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoJsWrap.h; sourceTree = "<group>"; };
+		E16251B2215CB8AB008C4ABC /* CryptoJsWrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoJsWrap.m; sourceTree = "<group>"; };
+		E16251B4215CBDB6008C4ABC /* crypto-js.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "crypto-js.txt"; sourceTree = "<group>"; };
+		E16251B6215CD1C6008C4ABC /* BKMsGenerateSeedsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKMsGenerateSeedsVC.xib; sourceTree = "<group>"; };
+		E16251B7215CD1C6008C4ABC /* BKMsGenerateSeedsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKMsGenerateSeedsVC.m; sourceTree = "<group>"; };
+		E16251B8215CD1C7008C4ABC /* BKMsGenerateSeedsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMsGenerateSeedsVC.h; sourceTree = "<group>"; };
+		E16251BE215DE965008C4ABC /* qrcode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qrcode.png; sourceTree = "<group>"; };
+		E16251C0215E05C9008C4ABC /* arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down.png; sourceTree = "<group>"; };
+		E16251C2215E2348008C4ABC /* ShowQRcodeSmallVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowQRcodeSmallVC.h; sourceTree = "<group>"; };
+		E16251C3215E2348008C4ABC /* ShowQRcodeSmallVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowQRcodeSmallVC.m; sourceTree = "<group>"; };
+		E16251C4215E2348008C4ABC /* ShowQRcodeSmallVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowQRcodeSmallVC.xib; sourceTree = "<group>"; };
+		E16251C7215E28F3008C4ABC /* QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCode.m; sourceTree = "<group>"; };
+		E16251C8215E28F3008C4ABC /* QRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCode.h; sourceTree = "<group>"; };
+		E177A2D521BB6F3B00EC52E8 /* app-v2-multisig.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "app-v2-multisig.html"; sourceTree = "<group>"; };
+		E177A2D621BB6F3B00EC52E8 /* bip39-en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "bip39-en.txt"; sourceTree = "<group>"; };
+		E177A2D721BB6F3B00EC52E8 /* app4.0.2.b2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = app4.0.2.b2.js; sourceTree = "<group>"; };
+		E177A2D821BB6F3B00EC52E8 /* JsJson.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JsJson.js; sourceTree = "<group>"; };
+		E177A2D921BB6F3B00EC52E8 /* bitkey-multisig-v2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "bitkey-multisig-v2.js"; sourceTree = "<group>"; };
+		E177A2DA21BB6F3B00EC52E8 /* CoinMachineResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoinMachineResult.h; sourceTree = "<group>"; };
+		E177A2DC21BB6F3B00EC52E8 /* BKMsCoinMachine_Mac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKMsCoinMachine_Mac.m; sourceTree = "<group>"; };
+		E177A2DD21BB6F3B00EC52E8 /* BKMsCoinMachine_Mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKMsCoinMachine_Mac.h; sourceTree = "<group>"; };
+		E177A2DF21BB6F3B00EC52E8 /* CoinMachineResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoinMachineResult.m; sourceTree = "<group>"; };
+		E1AF16C421AE826500AA5585 /* BKHttpProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BKHttpProxy.m; sourceTree = "<group>"; };
+		E1AF16C521AE826500AA5585 /* BKHttpProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKHttpProxy.h; sourceTree = "<group>"; };
+		E1AF16C621AE826500AA5585 /* NetworkLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkLogger.h; sourceTree = "<group>"; };
+		E1AF16C721AE826500AA5585 /* NetworkLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkLogger.m; sourceTree = "<group>"; };
+		E1EC6072215499BB00139F1C /* BitKeyMultisigTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitKeyMultisigTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1EC6075215499BB00139F1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E1EC6076215499BB00139F1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E1EC6078215499BF00139F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1EC607B215499BF00139F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E1EC607D215499BF00139F1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1EC607E215499BF00139F1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E1EC6080215499BF00139F1C /* BitKeyMultisigTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BitKeyMultisigTool.entitlements; sourceTree = "<group>"; };
+		E1EC608621549B0700139F1C /* MainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainVC.h; sourceTree = "<group>"; };
+		E1EC608721549B0700139F1C /* MainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainVC.m; sourceTree = "<group>"; };
+		E1EC608821549B0700139F1C /* MainVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainVC.xib; sourceTree = "<group>"; };
+		E1EC60932154DC5700139F1C /* BKMsImportSeedsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKMsImportSeedsVC.h; sourceTree = "<group>"; };
+		E1EC60942154DC5700139F1C /* BKMsImportSeedsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKMsImportSeedsVC.m; sourceTree = "<group>"; };
+		E1EC60952154DC5700139F1C /* BKMsImportSeedsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BKMsImportSeedsVC.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1EC606F215499BB00139F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E16251A4215B4263008C4ABC /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				E16251B4215CBDB6008C4ABC /* crypto-js.txt */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+		E16251BB215DDEDB008C4ABC /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				E1EC60932154DC5700139F1C /* BKMsImportSeedsVC.h */,
+				E1EC60942154DC5700139F1C /* BKMsImportSeedsVC.m */,
+				E1EC60952154DC5700139F1C /* BKMsImportSeedsVC.xib */,
+				E16251B8215CD1C7008C4ABC /* BKMsGenerateSeedsVC.h */,
+				E16251B7215CD1C6008C4ABC /* BKMsGenerateSeedsVC.m */,
+				E16251B6215CD1C6008C4ABC /* BKMsGenerateSeedsVC.xib */,
+				E1EC608621549B0700139F1C /* MainVC.h */,
+				E1EC608721549B0700139F1C /* MainVC.m */,
+				E1EC608821549B0700139F1C /* MainVC.xib */,
+				E125996B215E30BB009A443B /* ShowQRcodeBigVC.h */,
+				E125996A215E30BB009A443B /* ShowQRcodeBigVC.m */,
+				E125996C215E30BB009A443B /* ShowQRcodeBigVC.xib */,
+				E16251C2215E2348008C4ABC /* ShowQRcodeSmallVC.h */,
+				E16251C3215E2348008C4ABC /* ShowQRcodeSmallVC.m */,
+				E16251C4215E2348008C4ABC /* ShowQRcodeSmallVC.xib */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		E16251BC215DDF03008C4ABC /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				E1AF16C521AE826500AA5585 /* BKHttpProxy.h */,
+				E1AF16C421AE826500AA5585 /* BKHttpProxy.m */,
+				E1AF16C621AE826500AA5585 /* NetworkLogger.h */,
+				E1AF16C721AE826500AA5585 /* NetworkLogger.m */,
+				E16251C8215E28F3008C4ABC /* QRCode.h */,
+				E16251C7215E28F3008C4ABC /* QRCode.m */,
+				E16251B1215CB8AA008C4ABC /* CryptoJsWrap.h */,
+				E16251B2215CB8AB008C4ABC /* CryptoJsWrap.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		E16251BD215DDF2F008C4ABC /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				E16251C0215E05C9008C4ABC /* arrow_down.png */,
+				E16251BE215DE965008C4ABC /* qrcode.png */,
+				E16251A2215B3D66008C4ABC /* logo.png */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
+		E177A2D121BB6F3B00EC52E8 /* BitKeyCoinLib */ = {
+			isa = PBXGroup;
+			children = (
+				E177A2D221BB6F3B00EC52E8 /* app-v2-html */,
+				E177A2DA21BB6F3B00EC52E8 /* CoinMachineResult.h */,
+				E177A2DF21BB6F3B00EC52E8 /* CoinMachineResult.m */,
+				E177A2DC21BB6F3B00EC52E8 /* BKMsCoinMachine_Mac.m */,
+				E177A2DD21BB6F3B00EC52E8 /* BKMsCoinMachine_Mac.h */,
+			);
+			path = BitKeyCoinLib;
+			sourceTree = "<group>";
+		};
+		E177A2D221BB6F3B00EC52E8 /* app-v2-html */ = {
+			isa = PBXGroup;
+			children = (
+				E177A2D521BB6F3B00EC52E8 /* app-v2-multisig.html */,
+				E177A2D621BB6F3B00EC52E8 /* bip39-en.txt */,
+				E177A2D721BB6F3B00EC52E8 /* app4.0.2.b2.js */,
+				E177A2D821BB6F3B00EC52E8 /* JsJson.js */,
+				E177A2D921BB6F3B00EC52E8 /* bitkey-multisig-v2.js */,
+			);
+			path = "app-v2-html";
+			sourceTree = "<group>";
+		};
+		E1EC6069215499BB00139F1C = {
+			isa = PBXGroup;
+			children = (
+				E16251B0215B62B2008C4ABC /* bitkey.pch */,
+				E1EC6074215499BB00139F1C /* BitKeyMultisigTool */,
+				E1EC6073215499BB00139F1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E1EC6073215499BB00139F1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1EC6072215499BB00139F1C /* BitKeyMultisigTool.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1EC6074215499BB00139F1C /* BitKeyMultisigTool */ = {
+			isa = PBXGroup;
+			children = (
+				E177A2D121BB6F3B00EC52E8 /* BitKeyCoinLib */,
+				E16251BD215DDF2F008C4ABC /* Media */,
+				E16251BC215DDF03008C4ABC /* Class */,
+				E16251BB215DDEDB008C4ABC /* MVC */,
+				E16251A4215B4263008C4ABC /* HTML */,
+				E1EC6075215499BB00139F1C /* AppDelegate.h */,
+				E1EC6076215499BB00139F1C /* AppDelegate.m */,
+				E1EC6078215499BF00139F1C /* Assets.xcassets */,
+				E1EC607A215499BF00139F1C /* MainMenu.xib */,
+				E1EC607D215499BF00139F1C /* Info.plist */,
+				E1EC607E215499BF00139F1C /* main.m */,
+				E1EC6080215499BF00139F1C /* BitKeyMultisigTool.entitlements */,
+			);
+			path = BitKeyMultisigTool;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1EC6071215499BB00139F1C /* BitKeyMultisigTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1EC6083215499BF00139F1C /* Build configuration list for PBXNativeTarget "BitKeyMultisigTool" */;
+			buildPhases = (
+				E1EC606E215499BB00139F1C /* Sources */,
+				E1EC606F215499BB00139F1C /* Frameworks */,
+				E1EC6070215499BB00139F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitKeyMultisigTool;
+			productName = TEST_MacOS;
+			productReference = E1EC6072215499BB00139F1C /* BitKeyMultisigTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1EC606A215499BB00139F1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = df;
+				TargetAttributes = {
+					E1EC6071215499BB00139F1C = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E1EC606D215499BB00139F1C /* Build configuration list for PBXProject "BitKeyMultisigTool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1EC6069215499BB00139F1C;
+			productRefGroup = E1EC6073215499BB00139F1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1EC6071215499BB00139F1C /* BitKeyMultisigTool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1EC6070215499BB00139F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E177A2E421BB6F3B00EC52E8 /* app4.0.2.b2.js in Resources */,
+				E16251B9215CD1C7008C4ABC /* BKMsGenerateSeedsVC.xib in Resources */,
+				E177A2E321BB6F3B00EC52E8 /* bip39-en.txt in Resources */,
+				E1EC60972154DC5700139F1C /* BKMsImportSeedsVC.xib in Resources */,
+				E16251A3215B3D66008C4ABC /* logo.png in Resources */,
+				E1EC608A21549B0700139F1C /* MainVC.xib in Resources */,
+				E125996E215E30BB009A443B /* ShowQRcodeBigVC.xib in Resources */,
+				E16251C6215E2348008C4ABC /* ShowQRcodeSmallVC.xib in Resources */,
+				E177A2E221BB6F3B00EC52E8 /* app-v2-multisig.html in Resources */,
+				E1EC6079215499BF00139F1C /* Assets.xcassets in Resources */,
+				E16251BF215DE965008C4ABC /* qrcode.png in Resources */,
+				E16251B5215CBDB6008C4ABC /* crypto-js.txt in Resources */,
+				E177A2E521BB6F3B00EC52E8 /* JsJson.js in Resources */,
+				E1EC607C215499BF00139F1C /* MainMenu.xib in Resources */,
+				E16251C1215E05C9008C4ABC /* arrow_down.png in Resources */,
+				E177A2E621BB6F3B00EC52E8 /* bitkey-multisig-v2.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1EC606E215499BB00139F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1EC608921549B0700139F1C /* MainVC.m in Sources */,
+				E177A2E921BB6F3B00EC52E8 /* CoinMachineResult.m in Sources */,
+				E16251C5215E2348008C4ABC /* ShowQRcodeSmallVC.m in Sources */,
+				E125996D215E30BB009A443B /* ShowQRcodeBigVC.m in Sources */,
+				E177A2E721BB6F3B00EC52E8 /* BKMsCoinMachine_Mac.m in Sources */,
+				E16251B3215CB8AB008C4ABC /* CryptoJsWrap.m in Sources */,
+				E1AF16C921AE826600AA5585 /* NetworkLogger.m in Sources */,
+				E1EC60962154DC5700139F1C /* BKMsImportSeedsVC.m in Sources */,
+				E16251BA215CD1C7008C4ABC /* BKMsGenerateSeedsVC.m in Sources */,
+				E1EC607F215499BF00139F1C /* main.m in Sources */,
+				E1AF16C821AE826600AA5585 /* BKHttpProxy.m in Sources */,
+				E16251C9215E28F3008C4ABC /* QRCode.m in Sources */,
+				E1EC6077215499BB00139F1C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E1EC607A215499BF00139F1C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1EC607B215499BF00139F1C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1EC6081215499BF00139F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E1EC6082215499BF00139F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E1EC6084215499BF00139F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BitKeyMultisigTool/BitKeyMultisigTool.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FX6QTNRB57;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/bitkey.pch";
+				INFOPLIST_FILE = BitKeyMultisigTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = app.bitkey.BitKeyMultisigTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		E1EC6085215499BF00139F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BitKeyMultisigTool/BitKeyMultisigTool.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FX6QTNRB57;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/bitkey.pch";
+				INFOPLIST_FILE = BitKeyMultisigTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = app.bitkey.BitKeyMultisigTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1EC606D215499BB00139F1C /* Build configuration list for PBXProject "BitKeyMultisigTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1EC6081215499BF00139F1C /* Debug */,
+				E1EC6082215499BF00139F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1EC6083215499BF00139F1C /* Build configuration list for PBXNativeTarget "BitKeyMultisigTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1EC6084215499BF00139F1C /* Debug */,
+				E1EC6085215499BF00139F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E1EC606A215499BB00139F1C /* Project object */;
+}

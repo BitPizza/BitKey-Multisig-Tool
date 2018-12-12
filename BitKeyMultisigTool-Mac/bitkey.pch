@@ -1,0 +1,36 @@
+//
+//  bitkey.pch
+//  BitKeyMultisigTool
+//
+//  Created by df on 2018/9/26.
+//  Copyright © 2018 df. All rights reserved.
+//
+
+#ifndef bitkey_pch
+#define bitkey_pch
+#import "BKMsCoinMachine_Mac.h"
+
+
+
+#import "CryptoJsWrap.h"
+
+
+#define BKMsCoinMachine_Mac_Obj [BKMsCoinMachine_Mac sharedInstance]
+
+
+#define Notice_Name_NewSeedsSaved @"Notice_Name_NewSeedsSaved"
+#define NSUserDefaults_Key_HDWalletInfo @"NSUserDefaults_Key_HDWalletInfo"
+#define NSUserDefaults_Key_PathCount @"NSUserDefaults_Key_PathCount"
+
+
+
+#define DEBUGGING NO
+#define NSLog if(DEBUGGING)NSLog
+
+
+#ifndef DEBUG
+#define NSLog(...);
+#endif
+
+
+#endif /* bitkey_pch */

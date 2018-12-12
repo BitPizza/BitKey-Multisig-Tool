@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="ShowQRcodeBigVC">
+            <connections>
+                <outlet property="imageView" destination="CrP-qd-bkG" id="r80-on-9oR"/>
+                <outlet property="titleLable" destination="BqS-C1-2KY" id="jkg-Wb-wb5"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView appearanceType="aqua" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="650" height="650"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CrP-qd-bkG">
+                    <rect key="frame" x="9" y="20" width="631" height="629"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="6mW-e5-yvs"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BqS-C1-2KY">
+                    <rect key="frame" x="126" y="1" width="399" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="395" id="aAe-dM-gYq"/>
+                        <constraint firstAttribute="height" constant="17" id="iRF-OU-uPx"/>
+                    </constraints>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="center" title="Label" id="ldI-ew-0bG">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZhD-An-QdB">
+                    <rect key="frame" x="565" y="-8" width="75" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <buttonCell key="cell" type="push" title="Close" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OvQ-96-nj9">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="Close:" target="-2" id="8k4-Pz-xYT"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="CrP-qd-bkG" secondAttribute="bottom" constant="20" id="QwV-Kn-mOH"/>
+                <constraint firstItem="CrP-qd-bkG" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="9" id="TQq-BZ-Oej"/>
+                <constraint firstAttribute="bottom" secondItem="BqS-C1-2KY" secondAttribute="bottom" constant="1" id="Vuh-LP-wds"/>
+                <constraint firstAttribute="trailing" secondItem="CrP-qd-bkG" secondAttribute="trailing" constant="10" id="XKB-A9-XAv"/>
+                <constraint firstItem="CrP-qd-bkG" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="1" id="nbH-zR-5wH"/>
+                <constraint firstItem="BqS-C1-2KY" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="nll-Qj-lnH"/>
+            </constraints>
+            <point key="canvasLocation" x="126" y="249"/>
+        </customView>
+    </objects>
+</document>
