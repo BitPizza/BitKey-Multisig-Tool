@@ -2,7 +2,7 @@
 
 <head>
   <script src="./app4.0.2.b2.js"></script>
-  <script src="./bitkey-multisig2.js"></script>
+  <script src="./bitkey-multisig-v2.js"></script>
   <script>
     function test() {
         if(!debug){
@@ -13,9 +13,6 @@
       //2147483647 max int
       //1537336905
       //4294967295 max uint
-      
-      
-      
       var parameterObj = {};
       parameterObj['pubkey1_'] = "02ca6361f44cd311a629ee650774b7ddb61f09b5b36076f3fa634bfc4e608a3226";
       parameterObj['pubkey2_'] = "02945faddc894e9d15c38bf0cb0de9e308bd4d65b7aaa22925dce89d4f9fb1bec0";
@@ -26,7 +23,6 @@
 
       if (1) {
         print("\n测试10 多签名测试: \n");
-
         const fromAddress_ = P2SH_P2WSH_1cltvOf2MultiSig_AddressObj.P2SH_P2WSH_1cltvOf2MultiSig_address;
         const wifPrivateKey1_ = "L2dbi6WxVJfHzvypdin1WXGRwCMZZ15YaWUTbWF1U1dCjM7jJcJM";
         const wifPrivateKey2_ = "L2s3TuhZiz6rSrQn3Jg4gtUnn9tqgMcFuh9CCqb4rkgHvSZNhQTy";
@@ -36,13 +32,10 @@
         const minerFee_ = 1000;
         const witnessScriptAsm_ = P2SH_P2WSH_1cltvOf2MultiSig_AddressObj.witnessScript;
 
-        //两步计算哈
-
         // The median of the last 11 blocks is used instead of the block's timestamp, ensuring that it increases monotonically with each block.
         const nlockTime_int = Math.floor(Date.now() / 1000) - 11 * 10 * 60;
-        //需要使用同一个 nlockTime_int
+        //使用同一个 nlockTime_int
         const myTimeLockMultiSigTxb = new MyTimeLockMultiSigTxb();
-
         var paymentObj1 = {};
         paymentObj1["fromAddress"] = fromAddress_;
         paymentObj1["toAddress"] = toAddress_;
@@ -53,8 +46,6 @@
         paymentObj1["nlockTime"] = nlockTime_int;
         print(paymentObj1);
         testPaymentObj(paymentObj1);
-
-
         var paymentObj2 = {};
         paymentObj2["fromAddress"] = fromAddress_;
         paymentObj2["outputAddressArray"] = ['15VuSSkj5cxsxay8rhBJnDnP8AgnPPpiZp', 'bc1qj256qvyvn9kd4n04vzkyqm3rmukvlj6sc6vzeq', '3PmHqmbcHwNoaerb1exwEXVXU9KuVt9iBX'];
@@ -67,15 +58,10 @@
         print(paymentObj2);
         testPaymentObj(paymentObj2);
 
-
-
-
         function testPaymentObj(paymentObj) {
-       
           //第1步 机器1 key1
           const d1_hashHexForSigArray = app_TimeLockMultiSigTxb_getHashHexForSigArray(JSON.stringify(paymentObj));
           print("第1步带签名的hash数组 " + JSON.stringify(d1_hashHexForSigArray));
-          
           
           var parameterObj = {};
           parameterObj['key'] = wifPrivateKey1_;
@@ -90,7 +76,6 @@
           }
 
           //第2步 机器2 key2
-          
           const d2_hashHexForSigArray = app_TimeLockMultiSigTxb_getHashHexForSigArray(JSON.stringify(paymentObj));
           print("第2步带签名的hash数组 " + JSON.stringify(d1_hashHexForSigArray));
 
@@ -108,11 +93,9 @@
               parameterObj['signature_hex'] =  d2_sigHexArray_fromKey2[0];
               parameterObj['pubKey_hex'] = '02945faddc894e9d15c38bf0cb0de9e308bd4d65b7aaa22925dce89d4f9fb1bec0';
               print('验证签名信息是否来自对应的密钥Key2 ' + app_sigVerify(JSON.stringify(parameterObj)));
-     
           }
 
           print(d2_hashHexForSigArray);
-
 
           let tryTimeLock = true;
           if (tryTimeLock) {
@@ -125,15 +108,10 @@
           parameterObj['paymentObj_'] = paymentObj;
           parameterObj['sigHexArray_fromKey1_'] = d1_sigHexArray_fromKey1;
           parameterObj['sigHexArray_fromKey2_'] = d2_sigHexArray_fromKey2;
-
           const rawTransactionInfo = app_TimeLockMultiSigTxb_getSignedTx(JSON.stringify(parameterObj));
-
           print("多签名结果");
           print(rawTransactionInfo);
         }
-
-
-
       }
 
       if (1) {
@@ -150,19 +128,12 @@
 
 
         print("app_getHDKeypairFromSeedInfoAndPath");
-        
         var parameterObj = {};
         parameterObj['loaclHDWalletObj'] = loaclHDWalletObj;
         parameterObj['path'] = path;
-        
-        
         print('\n\n测试11 app_getHDKeypairFromSeedInfoAndPath :' + JSON.stringify(parameterObj));
-
         print(app_getHDKeypairFromSeedInfoAndPath(JSON.stringify(parameterObj)));
-
       }
-
-
 
       if(1){
         //大整数问题，每次版本需要测试
@@ -175,7 +146,7 @@
 
           if(timelock_uint >= 4294967295 - 86400 * 100){
               console.log("\n\nBigNumber 测试完成  max uint 4294967295 - 86400 * 100");
-              //需要继续研究这个函数  const CScriptNum nLockTime(stacktop(-1), fRequireMinimal, 5);
+              //BitcoinCore 相关函数  const CScriptNum nLockTime(stacktop(-1), fRequireMinimal, 5);
               return;
           }
           var timelock_buf = bitcoin.script.number.encode(ts);
@@ -188,16 +159,12 @@
         }
       }
     }
-
-
   </script>
 </head>
-
 <body onload="onload()">
   <pre id="logger"></pre>
 </body>
 <script>
   function onload() { var t; debug && (t = document.getElementById("logger"), console.old = console.log, console.log = function () { var o, n, e = ""; for (n = 0; n < arguments.length; n++)e += '<span class="log-' + typeof (o = arguments[n]) + '">', "object" == typeof o && "object" == typeof JSON && "function" == typeof JSON.stringify ? e += JSON.stringify(o) : e += o, e += "</span>&nbsp;"; t.innerHTML += e + "<br>", console.old.apply(void 0, arguments) }, test()) }
 </script>
-
 </html>

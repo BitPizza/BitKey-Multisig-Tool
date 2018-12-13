@@ -26,6 +26,13 @@ function reverseString(str) {
     return str.split("").reverse().join("");
 }
 
+function utf8_to_b64(str) {
+    return window.btoa(unescape(encodeURIComponent(str)));
+}
+function b64_to_utf8(str) {
+    return decodeURIComponent(escape(window.atob(str)));
+}
+
 function JsonOrBase64parse(string) {
     var obj = null;
     try{
@@ -36,7 +43,7 @@ function JsonOrBase64parse(string) {
     
     if(!obj){
         try{
-            obj = JSON.parse(atob(string));
+            obj = JSON.parse(b64_to_utf8(string));
         }
         catch(e){
         }
@@ -142,7 +149,7 @@ function app_getHDKeypairFromSeedInfoAndPath(parameterJson) {
     var parameterObj = JsonOrBase64parse(parameterJson);
     var loaclHDWalletObj = parameterObj['loaclHDWalletObj'];
     var path = parameterObj['path'];
-    
+
     const HDWallet = new app_getHDWalletFromB39mnemonic(loaclHDWalletObj['words'], loaclHDWalletObj['password'], loaclHDWalletObj['passwordHint']);
     return HDWallet.getKeypair(path);
 }

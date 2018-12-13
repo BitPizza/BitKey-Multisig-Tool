@@ -70,7 +70,7 @@
 		E1AF16C521AE826500AA5585 /* BKHttpProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BKHttpProxy.h; sourceTree = "<group>"; };
 		E1AF16C621AE826500AA5585 /* NetworkLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkLogger.h; sourceTree = "<group>"; };
 		E1AF16C721AE826500AA5585 /* NetworkLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkLogger.m; sourceTree = "<group>"; };
-		E1EC6072215499BB00139F1C /* BitKeyMultisigTool By Netcaa Ltd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BitKeyMultisigTool By Netcaa Ltd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1EC6072215499BB00139F1C /* BitKeyMultisigTool by Netcaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BitKeyMultisigTool by Netcaa.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EC6075215499BB00139F1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E1EC6076215499BB00139F1C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E1EC6078215499BF00139F1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 		E1EC6073215499BB00139F1C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E1EC6072215499BB00139F1C /* BitKeyMultisigTool By Netcaa Ltd.app */,
+				E1EC6072215499BB00139F1C /* BitKeyMultisigTool by Netcaa.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,9 +215,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E1EC6071215499BB00139F1C /* BitKeyMultisigTool By Netcaa Ltd */ = {
+		E1EC6071215499BB00139F1C /* BitKeyMultisigTool by Netcaa */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E1EC6083215499BF00139F1C /* Build configuration list for PBXNativeTarget "BitKeyMultisigTool By Netcaa Ltd" */;
+			buildConfigurationList = E1EC6083215499BF00139F1C /* Build configuration list for PBXNativeTarget "BitKeyMultisigTool by Netcaa" */;
 			buildPhases = (
 				E1EC606E215499BB00139F1C /* Sources */,
 				E1EC606F215499BB00139F1C /* Frameworks */,
@@ -227,9 +227,9 @@
 			);
 			dependencies = (
 			);
-			name = "BitKeyMultisigTool By Netcaa Ltd";
+			name = "BitKeyMultisigTool by Netcaa";
 			productName = TEST_MacOS;
-			productReference = E1EC6072215499BB00139F1C /* BitKeyMultisigTool By Netcaa Ltd.app */;
+			productReference = E1EC6072215499BB00139F1C /* BitKeyMultisigTool by Netcaa.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -264,7 +264,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E1EC6071215499BB00139F1C /* BitKeyMultisigTool By Netcaa Ltd */,
+				E1EC6071215499BB00139F1C /* BitKeyMultisigTool by Netcaa */,
 			);
 		};
 /* End PBXProject section */
@@ -495,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E1EC6083215499BF00139F1C /* Build configuration list for PBXNativeTarget "BitKeyMultisigTool By Netcaa Ltd" */ = {
+		E1EC6083215499BF00139F1C /* Build configuration list for PBXNativeTarget "BitKeyMultisigTool by Netcaa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E1EC6084215499BF00139F1C /* Debug */,

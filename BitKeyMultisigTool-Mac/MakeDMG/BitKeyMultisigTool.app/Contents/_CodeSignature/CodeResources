@@ -10,7 +10,7 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		KGAI5+Ax1Fx5IOegvJdD4H8BTDo=
+		+Yx0Qic3xXOU5293RZHMd2oTNLE=
 		</data>
 		<key>Resources/BKMsGenerateSeedsVC.nib</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Resources/MainVC.nib</key>
 		<data>
-		7SnUnWXtno0EoMs1K9lGSD9MHls=
+		i6qQp/BXJhWxVpKGLUZ0YQgY5kg=
 		</data>
 		<key>Resources/ShowQRcodeBigVC.nib</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Resources/app-v2-multisig.html</key>
 		<data>
-		uyCTZqzrSLmlx2LeIc5WRZX4tnQ=
+		tSif3MYCt72xm9t8LUZxhMguHQw=
 		</data>
 		<key>Resources/app4.0.2.b2.js</key>
 		<data>
@@ -56,9 +56,9 @@
 		<data>
 		stUkGuAnoOQPBqM9kJgJoZDyEP4=
 		</data>
-		<key>Resources/bitkey-multisig2.js</key>
+		<key>Resources/bitkey-multisig-v2.js</key>
 		<data>
-		ijQ51ZJadMdStxNcL22bOljA/bo=
+		TRUAkpo+YNuEMzi8TmS0LnA4apU=
 		</data>
 		<key>Resources/crypto-js.txt</key>
 		<data>
@@ -71,10 +71,6 @@
 		<key>Resources/qrcode.png</key>
 		<data>
 		/Buj16urzG+TaXBgs8Mw/W0UD2k=
-		</data>
-		<key>Resources/template.html</key>
-		<data>
-		JdQeLk53+mYAumNAIjn2wKlpKh8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -94,11 +90,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KGAI5+Ax1Fx5IOegvJdD4H8BTDo=
+			+Yx0Qic3xXOU5293RZHMd2oTNLE=
 			</data>
 			<key>hash2</key>
 			<data>
-			HRUEXvEv88gxkhdxZ7vpzNEFqdiDeFqmECDvgTd0fNo=
+			w5nLrAp4UEUuk25636oVFArKBm83GzSoQ7vYWpEDRHo=
 			</data>
 		</dict>
 		<key>Resources/BKMsGenerateSeedsVC.nib</key>
@@ -149,11 +145,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			7SnUnWXtno0EoMs1K9lGSD9MHls=
+			i6qQp/BXJhWxVpKGLUZ0YQgY5kg=
 			</data>
 			<key>hash2</key>
 			<data>
-			00m2x+adXxxv7WjpJhCrheMe/NDIX6WQ21QU5IlG1lc=
+			QnVe8mpfWTvhL1+qQkIh3fxQSxdBl1k4bqXzvi1QZMQ=
 			</data>
 		</dict>
 		<key>Resources/ShowQRcodeBigVC.nib</key>
@@ -182,11 +178,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uyCTZqzrSLmlx2LeIc5WRZX4tnQ=
+			tSif3MYCt72xm9t8LUZxhMguHQw=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Oa76X7Iz+mRVVQbLqtJUdyEuVlnXfMiv0mAi3PAi5c=
+			MRa5RNNbYD3JqUgd69fPOpt9SXWRBZ+D6Dqxzlzkvbg=
 			</data>
 		</dict>
 		<key>Resources/app4.0.2.b2.js</key>
@@ -222,15 +218,15 @@
 			L17tU6Rye0v4iA2PPxme/JDlhQNkbZ/47/Oi7Tsk29o=
 			</data>
 		</dict>
-		<key>Resources/bitkey-multisig2.js</key>
+		<key>Resources/bitkey-multisig-v2.js</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ijQ51ZJadMdStxNcL22bOljA/bo=
+			TRUAkpo+YNuEMzi8TmS0LnA4apU=
 			</data>
 			<key>hash2</key>
 			<data>
-			OWxrxpIWjpnYJv3WQ5JnUB7qJmpyxwsBRQTVahiCStA=
+			ecB0IQQbEPJPK9uf4EFSjxqmgH9UBXGc0ZRHm93fAtI=
 			</data>
 		</dict>
 		<key>Resources/crypto-js.txt</key>
@@ -264,17 +260,6 @@
 			<key>hash2</key>
 			<data>
 			3kTVgb2C+ksdVagQNjFTMdNcx3S08x9kKGZRSnYP6co=
-			</data>
-		</dict>
-		<key>Resources/template.html</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			JdQeLk53+mYAumNAIjn2wKlpKh8=
-			</data>
-			<key>hash2</key>
-			<data>
-			TLmQnWxTBIK5xwVQi1ko1qZWkOIegz1tqhb1tTW9k04=
 			</data>
 		</dict>
 	</dict>
