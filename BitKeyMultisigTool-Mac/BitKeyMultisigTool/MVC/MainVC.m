@@ -27,6 +27,7 @@ typedef NS_ENUM(NSInteger, BKMsToolStatus) {
     NSInteger _pathCount;
     NSInteger _rowCount;
     NSDictionary *_currentkeypairInfo;
+    BOOL _alertDidShow;
 }
 
 @property (weak) IBOutlet NSSecureTextField *passwordFeild;
@@ -199,11 +200,16 @@ typedef NS_ENUM(NSInteger, BKMsToolStatus) {
 
 
 - (void)showAlert_MUSTREAD{
+    if (_alertDidShow) {
+        return;
+    }
+    _alertDidShow = YES;
     dispatch_async(dispatch_get_main_queue(), ^(){
         NSAlert *alert = [[NSAlert alloc] init];
         [alert setMessageText:@"MUST READ"];
-        [alert setInformativeText:@"BitKeyMultisigTool is not a cryptocurrency exchange. \n\nYou can not buy/sell cryptocurrency with this app. It is only a cosign tool using Multi-signature and Time-lock to storage coins for Bitcoin users or miners.\n\nThis app and BitKey do not have the function to help you transfer/broadcast your transactions data. If you are a miner or Bitcoin user, you need broadcast your raw tx data via your own Bitcoin full node or other public API even use a satellite. \n\nThis app does not need to connect to the Internet, you can keep your private-keys cold storage."];
+        [alert setInformativeText:@"BitKeyMultisigTool is not a cryptocurrency exchange. \n\nThis is a pure tool co-working with Bitkey app on iPhone, using the Multisig-Timelock address to manage Bitcoin keys for individual users. \n\nThis app does not need to connect the Internet, you can keep your private-keys(Key2) in cold storage."];
         [alert addButtonWithTitle:@"Close"];
+//        [alert addButtonWithTitle:@"Introduction Multisig-TimeLock Address"];
         [alert runModal];
     });
 
